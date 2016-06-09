@@ -4,7 +4,7 @@ DONE Transform XSLT from Archi XML format to GraphML
 
 xsltproc transform.xsl testing2.xml > output2.xml --verbose
 
-Transformation has issue with namespaces:
+Transformation has issue with basic xmlns namespace:
 
 DOESNOTWORK
 <model xmlns="http://www.opengroup.org/xsd/archimate"
@@ -17,8 +17,13 @@ DOESNOTWORK
        identifier="id-11f5304f">
 
 WORKS
-<model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:schemaLocation="http://www.opengroup.org/xsd/archimate http://www.opengroup.org/xsd/archimate/archimate_v2p1.xsd">
+<model xmlns:dc="http://purl.org/dc/elements/1.1/"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.opengroup.org/xsd/archimate
+                           http://www.opengroup.org/xsd/archimate/archimate_v2p1.xsd
+                           http://purl.org/dc/elements/1.1/
+                           http://dublincore.org/schemas/xmls/qdc/2008/02/11/dc.xsd"
+       identifier="id-11f5304f">
 
 DONE Install Neo4j
 http://neo4j.com/docs/operations-manual/current/
