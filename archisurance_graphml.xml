@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<graphml xmlns:x="http://www.opengroup.org/xsd/archimate" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <key id="d0" for="node" attr.name="color" attr.type="string">
+    <default>yellow</default>
+  </key>
+  <key id="name" for="node" attr.name="name" attr.type="string">
+    <default>blank</default>
+  </key>
+  <graph id="G" edgedefault="undirected"/>
+</graphml>
